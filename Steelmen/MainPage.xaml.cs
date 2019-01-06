@@ -29,12 +29,23 @@ namespace Steelmen
 
         private void Button1_Click(object sender, RoutedEventArgs e)
         {
-
+            string name = "Andrii";
+            int x = 5;
+            double d = Math.PI / 2;
+            myLabel.Text = "name is " + name + "\nx is " + x + "\nd is " + d;
         }
 
         private void Button2_Click(object sender, RoutedEventArgs e)
         {
-
+            int x = 5;
+            if (x==10)
+            {
+                myLabel.Text = "OK";
+            }
+            else
+            {
+                myLabel.Text = "Not OK";
+            }
         }
 
         private void Button3_Click(object sender, RoutedEventArgs e)
