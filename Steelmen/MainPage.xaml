@@ -8,7 +8,21 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
+    <Grid Height="1000" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button x:Name="button1" Content="Show a message" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button1_Click"/>
+        <Button x:Name="button2" Content="if/else" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button2_Click" Width="49"/>
+        <Button x:Name="button3" Content="Another conditional test" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="Button3_Click"/>
+        <Button x:Name="button4" Content="A loop" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Click="Button4_Click"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" Grid.Row="2" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Center" Grid.ColumnSpan="2" Style="{StaticResource BodyTextBlockStyle}"/>
 
     </Grid>
 </Page>
